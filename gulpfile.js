@@ -131,6 +131,19 @@ gulp.task('nunjucks', function() {
 		.pipe(connect.reload());
 });
 
+// Icon sprite
+gulp.task('sprite', function () {
+	var spriteData = gulp.src(path.src + 'img/icons/*.png')
+		.pipe(spritesmith({
+			imgName: 'iconostas.png',
+			imgPath: '../img/iconostas.png',
+			padding: 5,
+			cssName: 'iconostas.less'
+		}));
+		spriteData.img.pipe(gulp.dest(path.src + 'img/unopt/'));
+		spriteData.css.pipe(gulp.dest(path.src + 'css/'));
+});
+
 // Js
 gulp.task('js', function () {
 	gulp.src(path.src + 'scripts/app.js')
