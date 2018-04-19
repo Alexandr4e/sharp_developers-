@@ -1,0 +1,220 @@
+/*
+LESS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: @icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+@icon-home: x y offset_x offset_y width height total_width total_height image_path name;
+
+At the bottom of this section, we provide information about the spritesheet itself
+@spritesheet: width height image @spritesheet-sprites;
+*/
+@icon-chrome-name: 'icon-chrome';
+@icon-chrome-x: 29px;
+@icon-chrome-y: 110px;
+@icon-chrome-offset-x: -29px;
+@icon-chrome-offset-y: -110px;
+@icon-chrome-width: 24px;
+@icon-chrome-height: 24px;
+@icon-chrome-total-width: 160px;
+@icon-chrome-total-height: 155px;
+@icon-chrome-image: '../img/iconostas.png';
+@icon-chrome: 29px 110px -29px -110px 24px 24px 160px 155px '../img/iconostas.png' 'icon-chrome';
+@icon-evernote-name: 'icon-evernote';
+@icon-evernote-x: 55px;
+@icon-evernote-y: 55px;
+@icon-evernote-offset-x: -55px;
+@icon-evernote-offset-y: -55px;
+@icon-evernote-width: 50px;
+@icon-evernote-height: 50px;
+@icon-evernote-total-width: 160px;
+@icon-evernote-total-height: 155px;
+@icon-evernote-image: '../img/iconostas.png';
+@icon-evernote: 55px 55px -55px -55px 50px 50px 160px 155px '../img/iconostas.png' 'icon-evernote';
+@icon-fb-name: 'icon-fb';
+@icon-fb-x: 55px;
+@icon-fb-y: 0px;
+@icon-fb-offset-x: -55px;
+@icon-fb-offset-y: 0px;
+@icon-fb-width: 50px;
+@icon-fb-height: 50px;
+@icon-fb-total-width: 160px;
+@icon-fb-total-height: 155px;
+@icon-fb-image: '../img/iconostas.png';
+@icon-fb: 55px 0px -55px 0px 50px 50px 160px 155px '../img/iconostas.png' 'icon-fb';
+@icon-ff-name: 'icon-ff';
+@icon-ff-x: 0px;
+@icon-ff-y: 110px;
+@icon-ff-offset-x: 0px;
+@icon-ff-offset-y: -110px;
+@icon-ff-width: 24px;
+@icon-ff-height: 24px;
+@icon-ff-total-width: 160px;
+@icon-ff-total-height: 155px;
+@icon-ff-image: '../img/iconostas.png';
+@icon-ff: 0px 110px 0px -110px 24px 24px 160px 155px '../img/iconostas.png' 'icon-ff';
+@icon-github-name: 'icon-github';
+@icon-github-x: 0px;
+@icon-github-y: 55px;
+@icon-github-offset-x: 0px;
+@icon-github-offset-y: -55px;
+@icon-github-width: 50px;
+@icon-github-height: 50px;
+@icon-github-total-width: 160px;
+@icon-github-total-height: 155px;
+@icon-github-image: '../img/iconostas.png';
+@icon-github: 0px 55px 0px -55px 50px 50px 160px 155px '../img/iconostas.png' 'icon-github';
+@icon-ie-name: 'icon-ie';
+@icon-ie-x: 87px;
+@icon-ie-y: 110px;
+@icon-ie-offset-x: -87px;
+@icon-ie-offset-y: -110px;
+@icon-ie-width: 24px;
+@icon-ie-height: 24px;
+@icon-ie-total-width: 160px;
+@icon-ie-total-height: 155px;
+@icon-ie-image: '../img/iconostas.png';
+@icon-ie: 87px 110px -87px -110px 24px 24px 160px 155px '../img/iconostas.png' 'icon-ie';
+@icon-opera-name: 'icon-opera';
+@icon-opera-x: 116px;
+@icon-opera-y: 110px;
+@icon-opera-offset-x: -116px;
+@icon-opera-offset-y: -110px;
+@icon-opera-width: 24px;
+@icon-opera-height: 24px;
+@icon-opera-total-width: 160px;
+@icon-opera-total-height: 155px;
+@icon-opera-image: '../img/iconostas.png';
+@icon-opera: 116px 110px -116px -110px 24px 24px 160px 155px '../img/iconostas.png' 'icon-opera';
+@icon-pinterest-name: 'icon-pinterest';
+@icon-pinterest-x: 110px;
+@icon-pinterest-y: 0px;
+@icon-pinterest-offset-x: -110px;
+@icon-pinterest-offset-y: 0px;
+@icon-pinterest-width: 50px;
+@icon-pinterest-height: 50px;
+@icon-pinterest-total-width: 160px;
+@icon-pinterest-total-height: 155px;
+@icon-pinterest-image: '../img/iconostas.png';
+@icon-pinterest: 110px 0px -110px 0px 50px 50px 160px 155px '../img/iconostas.png' 'icon-pinterest';
+@icon-safari-name: 'icon-safari';
+@icon-safari-x: 58px;
+@icon-safari-y: 110px;
+@icon-safari-offset-x: -58px;
+@icon-safari-offset-y: -110px;
+@icon-safari-width: 24px;
+@icon-safari-height: 24px;
+@icon-safari-total-width: 160px;
+@icon-safari-total-height: 155px;
+@icon-safari-image: '../img/iconostas.png';
+@icon-safari: 58px 110px -58px -110px 24px 24px 160px 155px '../img/iconostas.png' 'icon-safari';
+@icon-search-name: 'icon-search';
+@icon-search-x: 0px;
+@icon-search-y: 139px;
+@icon-search-offset-x: 0px;
+@icon-search-offset-y: -139px;
+@icon-search-width: 16px;
+@icon-search-height: 16px;
+@icon-search-total-width: 160px;
+@icon-search-total-height: 155px;
+@icon-search-image: '../img/iconostas.png';
+@icon-search: 0px 139px 0px -139px 16px 16px 160px 155px '../img/iconostas.png' 'icon-search';
+@icon-tw-name: 'icon-tw';
+@icon-tw-x: 110px;
+@icon-tw-y: 55px;
+@icon-tw-offset-x: -110px;
+@icon-tw-offset-y: -55px;
+@icon-tw-width: 50px;
+@icon-tw-height: 50px;
+@icon-tw-total-width: 160px;
+@icon-tw-total-height: 155px;
+@icon-tw-image: '../img/iconostas.png';
+@icon-tw: 110px 55px -110px -55px 50px 50px 160px 155px '../img/iconostas.png' 'icon-tw';
+@icon-youtube-name: 'icon-youtube';
+@icon-youtube-x: 0px;
+@icon-youtube-y: 0px;
+@icon-youtube-offset-x: 0px;
+@icon-youtube-offset-y: 0px;
+@icon-youtube-width: 50px;
+@icon-youtube-height: 50px;
+@icon-youtube-total-width: 160px;
+@icon-youtube-total-height: 155px;
+@icon-youtube-image: '../img/iconostas.png';
+@icon-youtube: 0px 0px 0px 0px 50px 50px 160px 155px '../img/iconostas.png' 'icon-youtube';
+@spritesheet-width: 160px;
+@spritesheet-height: 155px;
+@spritesheet-image: '../img/iconostas.png';
+@spritesheet-sprites: @icon-chrome @icon-evernote @icon-fb @icon-ff @icon-github @icon-ie @icon-opera @icon-pinterest @icon-safari @icon-search @icon-tw @icon-youtube;
+@spritesheet: 160px 155px '../img/iconostas.png' @spritesheet-sprites;
+
+/*
+The provided classes are intended to be used with the array-like variables
+
+.icon-home {
+  .sprite-width(@icon-home);
+}
+.icon-email {
+  .sprite(@icon-email);
+}
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+.sprite-width(@sprite) {
+  width: extract(@sprite, 5);
+}
+
+.sprite-height(@sprite) {
+  height: extract(@sprite, 6);
+}
+
+.sprite-position(@sprite) {
+  @sprite-offset-x: extract(@sprite, 3);
+  @sprite-offset-y: extract(@sprite, 4);
+  background-position: @sprite-offset-x @sprite-offset-y;
+}
+
+.sprite-image(@sprite) {
+  @sprite-image: extract(@sprite, 9);
+  @sprite-image-bare: ~`"@{sprite-image}".slice(1, -1)`;
+  background-image: url(@sprite-image-bare);
+}
+
+.sprite(@sprite) {
+  .sprite-image(@sprite);
+  .sprite-position(@sprite);
+  .sprite-width(@sprite);
+  .sprite-height(@sprite);
+}
+
+/*
+The `.sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of LESS
+
+This must be run when you have at least 2 sprites.
+  If run with a single sprite, then there will be reference errors.
+
+.sprites(@spritesheet-sprites);
+*/
+.sprites(@sprites, @i: 1) when (@i <= length(@sprites)) {
+  @sprite: extract(@sprites, @i);
+  @sprite-name: e(extract(@sprite, 10));
+  .@{sprite-name} {
+    .sprite(@sprite);
+  }
+  .sprites(@sprites, @i + 1);
+}
