@@ -1,0 +1,37 @@
+.browsers-support {
+  width: 265px;
+  text-align: right;
+  &__logos {
+    min-width: 190px;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    .icon {
+      display: block;
+      opacity: .25;
+      &.icon-ff {
+        .sprite(@icon-ff);
+      }
+      &.icon-chrome {
+        .sprite(@icon-chrome);
+      }
+      &.icon-ie {
+        .sprite(@icon-ie);
+      }
+      &.icon-safari {
+        .sprite(@icon-safari);
+      }
+      &.icon-opera {
+        .sprite(@icon-opera);
+      }
+    }
+  }
+  &__descr {
+    color: #5c5c5c;
+    .regular();
+    font-size: @14;
+    letter-spacing: -0.35px;
+  }
+}
