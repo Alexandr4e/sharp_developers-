@@ -35,8 +35,11 @@ table {border-collapse: collapse; border-spacing: 0;}
 	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
-	padding-left: 47px;
-	padding-right: 47px;
+	&_bg {
+		background-color: #e9e9e9;
+		padding-left: 47px;
+		padding-right: 47px;
+	}
 }
 
 @media screen and (max-width: 770px) {
@@ -48,9 +51,10 @@ table {border-collapse: collapse; border-spacing: 0;}
 body {
 	background: url("../img/body-bg.jpg") repeat center center;
 	min-width: 320px;
-	color: #222;
+	color: #121212;
 	text-align: left;
   font-size: @16;
+	line-height: 1.2;
 	.light();
 	position: relative;
 	opacity: 0;
