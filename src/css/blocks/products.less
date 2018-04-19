@@ -1,3 +1,14 @@
 .products {
-  &__item {}
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  &__item {
+    width: calc(~"(100% - 20px * 4) / 5");
+    margin: 0 20px 50px 0;
+    &:nth-child(5n) {
+      margin-right: 0;
+    }
+  }
 }

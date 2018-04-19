@@ -1,3 +1,30 @@
 .section {
-  &__title {}
+  &__title {
+    color: #121212;
+    .light();
+    font-size: @26;
+    margin-bottom: 33px;
+    position: relative;
+    &:before {
+      content: "";
+      width: 20px;
+      height: 8px;
+      background-color: #b03539;
+      position: absolute;
+      bottom: 9px;
+      left: -28px;
+    }
+  }
+  &__footer {
+    text-align: center;
+  }
+  &__more {
+    color: #444444;
+    .regular();
+    font-size: @16;
+    text-decoration: underline;
+    &:hover {
+      text-decoration: none;
+    }
+  }
 }

@@ -1,9 +1,40 @@
-.products {
+.product {
   &__body {}
-  &__image-wrap {}
-  &__image {}
-  &__about {}
-  &__info {}
-  &__name {}
-  &__footer {}
+  &__image-wrap {
+    width: 111px;
+    height: 156px;
+    margin: 0 auto 10px;
+    border: 1px solid #999999;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.34);
+    border-radius: 3px;
+    background-color: #e9e9e9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  &__image {
+    max-width: 100%;
+  }
+  &__about {
+    text-align: center;
+  }
+  &__info {
+    color: #525252;
+    .regular();
+    font-size: @11;
+    margin-bottom: 5px;
+  }
+  &__name {
+    color: #121212;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    .light();
+    font-size: @18;
+    margin-bottom: 10px;
+  }
+  &__footer {
+    text-align: center;
+  }
 }
