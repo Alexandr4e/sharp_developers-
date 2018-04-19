@@ -5,6 +5,8 @@
   background-color: #dadada;
   padding: 22px;
   margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
   &:last-child {
     margin-bottom: 0;
   }
@@ -32,5 +34,21 @@
   &__footer {
     padding-top: 14px;
     text-align: right;
+  }
+}
+
+@keyframes spin {
+  0% {
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -moz-transform: rotate(-359deg);
+    -o-transform: rotate(-359deg);
+    -webkit-transform: rotate(-359deg);
+    transform: rotate(-359deg);
   }
 }

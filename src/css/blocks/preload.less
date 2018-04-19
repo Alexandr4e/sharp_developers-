@@ -1,0 +1,29 @@
+.preload {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(227,227,227,.85);
+  &__align {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+  .icon {
+    margin-bottom: 14px;
+    &.icon-preload {
+      .svg-icon("icon-preload", 59px, 56px);
+    }
+    animation: spin 888ms infinite linear;
+    display: block;
+  }
+  &__text {
+    color: #646464;
+    .regular();
+    font-size: @16;
+  }
+}
