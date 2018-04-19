@@ -1,0 +1,36 @@
+.aside-block {
+  width: 100%;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.35);
+  border-radius: 3px;
+  background-color: #dadada;
+  padding: 22px;
+  margin-bottom: 30px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+  &__inner-wrap {}
+  &__title {
+    color: #222222;
+    .light();
+    font-size: @28;
+    position: relative;
+    padding-bottom: 15px;
+    margin-bottom: 14px;
+    &:after {
+      content: "";
+      width: 100%;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      border-top: 1px solid #c3c3c3;
+      border-bottom: 1px solid #e4e4e4;
+    }
+  }
+  &__content {
+    min-height: 178px;
+  }
+  &__footer {
+    padding-top: 14px;
+    text-align: right;
+  }
+}
