@@ -3,6 +3,7 @@
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
+  flex-wrap: wrap;
   &__item {
     margin-right: 90px;
   }
@@ -27,6 +28,16 @@
       &.icon-github {
         .svg-icon-param("icon-github", 46px, 39px, "[fill]: #2d2d2f");
       }
+    }
+  }
+}
+
+@media screen and (max-width: 1170px) {
+  .social-nav {
+    justify-content: center;
+    align-items: center;
+    &__item {
+      margin: 0 30px;
     }
   }
 }
