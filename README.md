@@ -1,4 +1,4 @@
-##### How to use:
+### How to use:
 
 Clone this repo:
 ```
@@ -7,19 +7,19 @@ $ npm install
 $ yarn
 ```
 
-##### Start working
+### Start working
 
 ```
 $ gulp
 ```
 
-##### Local server:
+### Local server:
 
 ```
 http://localhost:1393
 ```
 
-##### Compiled files:
+### Compiled files:
 
 All compiled files located in `build/` folder.
 
