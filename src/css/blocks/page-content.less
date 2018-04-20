@@ -60,8 +60,12 @@
         display: block;
         &.icon-search {
           margin: 0 auto;
+          transition: opacity 300ms ease;
           opacity: .28;
           .svg-icon("icon-search", 16px, 16px);
+          &:hover {
+            opacity: .7;
+          }
         }
       }
     }

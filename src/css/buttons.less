@@ -16,6 +16,9 @@
 	border-radius: 3px;
 	background-color: #494949;
 	background-image: linear-gradient(to top, rgba(0, 0, 0, 0.3) 0%, rgba(255, 255, 255, 0.3) 100%);
+	&:hover {
+		background-image: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 0.3) 100%);
+	}
 	&__inner {
 		position: relative;
 		top: -2px;
@@ -51,5 +54,11 @@
 		height: @41;
 		line-height: @44;
 		border-radius: 7px;
+		transition: box-shadow 300ms ease, color 300ms ease;
+		&:hover {
+			background-image: none;
+			box-shadow: 0 1px 10px rgba(0,0,0,0.7), inset 0 3px 0px -2px rgba(255,255,255,.4);
+			color: darken(#949494, 15%);
+		}
 	}
 }

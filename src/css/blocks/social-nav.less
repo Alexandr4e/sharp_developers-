@@ -10,23 +10,30 @@
   &__link {
     .icon {
       display: block;
+      opacity: .125;
+      transition: opacity 300ms ease;
       &.icon-evernote {
-        .svg-icon-param("icon-evernote", 40px, 47px, "[fill]: #2d2d2f");
+        .svg-icon("icon-evernote", 40px, 47px);
       }
       &.icon-facebook {
-        .svg-icon-param("icon-facebook", 41px, 41px, "[fill]: #2d2d2f");
+        .svg-icon("icon-facebook", 41px, 41px);
       }
       &.icon-pinterest {
-        .svg-icon-param("icon-pinterest", 33px, 41px, "[fill]: #2d2d2f");
+        .svg-icon("icon-pinterest", 33px, 41px);
       }
       &.icon-twitter {
-        .svg-icon-param("icon-twitter", 48px, 38px, "[fill]: #2d2d2f");
+        .svg-icon("icon-twitter", 48px, 38px);
       }
       &.icon-youtube {
-        .svg-icon-param("icon-youtube", 49px, 38px, "[fill]: #2d2d2f");
+        .svg-icon("icon-youtube", 49px, 38px);
       }
       &.icon-github {
-        .svg-icon-param("icon-github", 46px, 39px, "[fill]: #2d2d2f");
+        .svg-icon("icon-github", 46px, 39px);
+      }
+    }
+    &:hover {
+      .icon {
+        opacity: 1;
       }
     }
   }
@@ -51,22 +58,22 @@
     &__link {
       .icon {
         &.icon-evernote {
-          .svg-icon-param("icon-evernote", 31px, 36px, "[fill]: #2d2d2f");
+          .svg-icon("icon-evernote", 31px, 36px);
         }
         &.icon-facebook {
-          .svg-icon-param("icon-facebook", 31px, 31px, "[fill]: #2d2d2f");
+          .svg-icon("icon-facebook", 31px, 31px);
         }
         &.icon-pinterest {
-          .svg-icon-param("icon-pinterest", 26px, 31px, "[fill]: #2d2d2f");
+          .svg-icon("icon-pinterest", 26px, 31px);
         }
         &.icon-twitter {
-          .svg-icon-param("icon-twitter", 38px, 28px, "[fill]: #2d2d2f");
+          .svg-icon("icon-twitter", 38px, 28px);
         }
         &.icon-youtube {
-          .svg-icon-param("icon-youtube", 38px, 29px, "[fill]: #2d2d2f");
+          .svg-icon("icon-youtube", 38px, 29px);
         }
         &.icon-github {
-          .svg-icon-param("icon-github", 36px, 29px, "[fill]: #2d2d2f");
+          .svg-icon("icon-github", 36px, 29px);
         }
       }
     }
