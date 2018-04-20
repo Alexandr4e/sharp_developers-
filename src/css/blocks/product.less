@@ -1,17 +1,31 @@
 .product {
   &__body {}
   &__image-wrap {
-    width: 111px;
-    height: 156px;
-    margin: 0 auto 10px;
     border: 1px solid #999999;
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.34);
     border-radius: 3px;
     background-color: #dbdbdb;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 10px;
+    &:before {
+      display: block;
+      content: "";
+      width: 100%;
+      padding-top: (156 / 111) * 100%;
+    }
+  }
+  &__image-ratio {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+  }
+  &__image-cover {
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
   }
   &__image {
     max-width: 100%;
