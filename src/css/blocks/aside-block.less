@@ -10,7 +10,11 @@
   &:last-child {
     margin-bottom: 0;
   }
-  &__inner-wrap {}
+  &__inner-wrap {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+  }
   &__title {
     color: #222222;
     .light();
@@ -30,6 +34,7 @@
   }
   &__content {
     min-height: 178px;
+    flex-grow: 20;
   }
   &__footer {
     padding-top: 14px;
@@ -50,5 +55,19 @@
     -o-transform: rotate(-359deg);
     -webkit-transform: rotate(-359deg);
     transform: rotate(-359deg);
+  }
+}
+
+@media screen and (max-width: 1170px) {
+  .aside-block {
+    width: calc(~"100% - 20px / 2");
+    margin: 0 30px 30px 0;
+    align-self: stretch;
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+    &:last-child {
+      margin-bottom: 30px;
+    }
   }
 }

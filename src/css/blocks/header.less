@@ -1,6 +1,53 @@
 .header {
+  background-color: #080808;
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: cover;
+  background-size: auto;
   padding-top: 110px;
+  position: relative;
+  &__hamburger {
+    display: none;
+    position: absolute;
+    left: 16px;
+    top: 19px;
+  }
+  &__search {
+    display: none;
+    width: 28px;
+    height: 28px;
+    padding: 3.5px;
+    position: absolute;
+    right: 16px;
+    top: 19px;
+
+    .icon {
+      display: block;
+      &.icon-search {
+        .svg-icon-param("icon-search", 21px, 21px, "[fill]: #ffffff;");
+      }
+    }
+  }
+  &__title {
+    background: rgba(0,0,0,.85);
+    padding: 6px 20px;
+    display: none;
+    color: white;
+    .light();
+    font-size: @28;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    &__hamburger {
+      display: block;
+    }
+    &__search {
+      display: block;
+    }
+    &__title {
+      display: block;
+    }
+  }
 }
