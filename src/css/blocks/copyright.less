@@ -1,0 +1,21 @@
+.copyright {
+  color: #444444;
+  .light();
+  font-size: @32;
+  letter-spacing: -0.8px;
+  &_mobile {
+    display: none;
+  }
+  span {
+    font-size: @27;
+    letter-spacing: -0.9px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .copyright {
+    &_mobile {
+      display: inline;
+    }
+  }
+}
