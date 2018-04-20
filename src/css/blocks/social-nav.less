@@ -41,3 +41,34 @@
     }
   }
 }
+
+@media screen and (max-width: 500px) {
+  .social-nav {
+    justify-content: space-between;
+    &__item {
+      margin: 0;
+    }
+    &__link {
+      .icon {
+        &.icon-evernote {
+          .svg-icon-param("icon-evernote", 31px, 36px, "[fill]: #2d2d2f");
+        }
+        &.icon-facebook {
+          .svg-icon-param("icon-facebook", 31px, 31px, "[fill]: #2d2d2f");
+        }
+        &.icon-pinterest {
+          .svg-icon-param("icon-pinterest", 26px, 31px, "[fill]: #2d2d2f");
+        }
+        &.icon-twitter {
+          .svg-icon-param("icon-twitter", 38px, 28px, "[fill]: #2d2d2f");
+        }
+        &.icon-youtube {
+          .svg-icon-param("icon-youtube", 38px, 29px, "[fill]: #2d2d2f");
+        }
+        &.icon-github {
+          .svg-icon-param("icon-github", 36px, 29px, "[fill]: #2d2d2f");
+        }
+      }
+    }
+  }
+}

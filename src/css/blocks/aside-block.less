@@ -79,3 +79,14 @@
     align-self: auto;
   }
 }
+
+@media screen and (max-width: 500px) {
+  .aside-block {
+    &:first-child {
+      display: none;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

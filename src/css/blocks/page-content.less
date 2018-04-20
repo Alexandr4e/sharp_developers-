@@ -104,3 +104,17 @@
     }
   }
 }
+
+@media screen and (max-width: 500px) {
+  .page-content {
+    &__col {
+      &_main {
+        margin-bottom: 0;
+      }
+      &_aside {
+        width: calc(~"100% + 40px");
+        margin: 0 -20px;
+      }
+    }
+  }
+}
